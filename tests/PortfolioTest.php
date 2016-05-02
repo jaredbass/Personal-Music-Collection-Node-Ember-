@@ -17,9 +17,9 @@ class BookTest extends TestCase
     public function testHomeHasWords(){
         $this->visit('/home')
             ->see(' Search')
-            ->type('technology', 'title')
+            ->type('design', 'title')
             ->press('search')
-            ->seePageIs('/results?title=technology');
+            ->seePageIs('/results?title=design');
 
 //            ->dontSee('Administrator');
     }
